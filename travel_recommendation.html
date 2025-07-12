@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <title>Travel Recommendations</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-logo">
+            <img src="assets/plane.webp" width="50px" alt="Logo" class="logo">
+            <p>Travel Bloom</p>
+        </div>
+        <div class="header-nav">
+            <nav>
+                <ul>
+                    <li id='home-menu'><a href="#home">Home</a></li>
+                    <li class="menu"><a href="#about">About</a></li>
+                    <li class="menu"><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-search">
+            <input id="search-input" type="search" placeholder="Enter a destination or keyword">
+            <img src="assets/search.webp" width="28px" alt="Logo" class="logo">
+            <button id="search-btn"> Search</button>
+            <button id="clear-btn">Clear</button>
+        </div>
+    </div>
+
+    <div class="hero-social-icons">
+        <a href="https://www.twitter.com" target="_blank"><img class="social-img" src="assets/twitter.png"></a>
+        <a href="https://www.facebook.com" target="_blank"><img class="social-img" src="assets/facebook.png"></a>
+        <a href="https://www.instagram.com" target="_blank"><img class="social-img" src="assets/instagram.png"></a>
+        <a href="https://www.youtube.com" target="_blank"><img class="social-img" src="assets/youtube.png"></a>
+    </div>
+
+    <div class="hero">
+        <div class="hero-content" id="home">
+            <h1>Explore Dream Destination</h1>
+            <p>It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while
+                pursuing the desired destination that captivates the heart and ignites a sense of wonder </p>
+            <button id="explore-btn">Book Now</button>
+        </div>
+        <div class="hero-results-container">
+            <div class="close-icon">×</div>
+            <div class="hero-results"></div>
+
+        </div>
+
+    </div>
+
+    <div class="about-content" id="about">
+        <div class="about-text">
+            <h1>About Us</h1>
+            <p>Welcome to Our Company! We are a team of passionate individuals dedicated to providing excellent
+                services/products to our customers. Our mission is to <strong>provide the best experience</strong>
+                for people traveling to different destinations around the world.
+                Our values include integrity, innovation, customer satisfaction, and teamwork. We believe in
+                <strong>putting our customers first</strong> and <strong>working together</strong> to achieve our
+                goals.
+                Feel free to explore our website to learn more about what we offer!
+            </p>
+        </div>
+        <div class="about-team">
+            <h2>Our <br> Team</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <div class="team-member-img">
+                        <img src="assets/mary.webp" alt="Mary Tysen">
+                        <h3>Mary Tysen</h3>
+                    </div>
+                    <p>Mary is responsible for...</p>
+                    <button class="team-member-btn">CEO</button>
+                </div>
+                <div class="team-member">
+                    <div class="team-member-img">
+                        <img src="assets/celina.webp" alt="Celina Thomas">
+                        <h3>Celina Thomas</h3>
+                    </div>
+                    <p>Celina is responsible for...</p>
+                    <button class="team-member-btn">Team Lead</button>
+                </div>
+                <div class="team-member">
+                    <div class="team-member-img">
+                        <img src="assets/john.webp" alt="John Doe">
+                        <h3>John Doe</h3>
+                    </div>
+                    <p>John is responsible for...</p>
+                    <button class="team-member-btn">Delivery Head</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact-container">
+        <div class="contact-content" id="contact">
+            <div class="contact-text">
+                <h1>Contact Us</h1>
+                <p>Get in touch...</p>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="travel_recommendation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+
+</html>
