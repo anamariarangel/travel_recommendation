@@ -98,6 +98,9 @@ function toggleResults() {
             displayResults(results);
         });
     }
+    else{
+        alert("No results found for your search. Please try one of the following terms: 'beach', 'temple', 'Australia', 'Japan', 'Brazil'.");
+    }
 }
 function fetchresults() {
     return axios.get('travel_recommendation_api.json')
